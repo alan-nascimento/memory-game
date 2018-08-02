@@ -187,6 +187,7 @@ function refreshTimer() {
 
 // reset timer
 function resetTimer() {
+	interval = clearInterval(interval);
 	second.value = 0;
 	minute.value = 0;
 	refreshTimer();
@@ -209,7 +210,7 @@ function startTimer() {
 // congratulations popup when all cards match
 function congratulations() {
 	if(matchedCard.length == 16) {
-		clearInterval(interval);
+		interval = clearInterval(interval);
 		popup.classList.add("show");
 		document.getElementById("total-moves").innerHTML = moves;
 		document.getElementById("total-time").innerHTML = timer.innerHTML;

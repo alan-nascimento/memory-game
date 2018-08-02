@@ -194,18 +194,46 @@ h1 {
 
 /* Responsive Optimizations */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 480px) {
 
     .deck {
-        padding: 40px;
+        padding: 15px;
+    }
+
+    .deck .card {
+        width: 95px;
+        height: 95px;
+        margin: 8px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 748px) {
+
+    .deck {
+        padding: 15px;
     }
 
     .deck .card {
         width: 125px;
         height: 125px;
-        margin: 0;
+        margin: 5px;
     }
-    
+
+}
+
+@media only screen and (min-width: 749px) {
+
+    .deck {
+        padding: 15px;
+    }
+
+    .deck .card {
+        width: 130px;
+        height: 130px;
+        margin: 5px;
+    }
+
 }
 
 /* Animations */
